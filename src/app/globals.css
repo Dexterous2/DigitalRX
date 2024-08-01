@@ -1,0 +1,156 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	:root {
+		--background: 0 0% 100%;
+		--foreground: 222.2 84% 4.9%;
+
+		--card: 0 0% 100%;
+		--card-foreground: 222.2 84% 4.9%;
+
+		--popover: 0 0% 100%;
+		--popover-foreground: 222.2 84% 4.9%;
+
+		--primary: 222.2 47.4% 11.2%;
+		--primary-foreground: 210 40% 98%;
+
+		--secondary: 210 40% 96.1%;
+		--secondary-foreground: 222.2 47.4% 11.2%;
+
+		--muted: 210 40% 96.1%;
+		--muted-foreground: 215.4 16.3% 46.9%;
+
+		--accent: 210 40% 96.1%;
+		--accent-foreground: 222.2 47.4% 11.2%;
+
+		--destructive: 0 84.2% 60.2%;
+		--destructive-foreground: 210 40% 98%;
+
+		--border: 214.3 31.8% 91.4%;
+		--input: 214.3 31.8% 91.4%;
+		--ring: 222.2 84% 4.9%;
+
+		--radius: 0.5rem;
+
+		--primary-color: #CF5E02;
+		--text-primary-color: rgba(120, 120, 120, 1);
+		--white-color: #fff;
+	}
+
+	.dark {
+		--background: 222.2 84% 4.9%;
+		--foreground: 210 40% 98%;
+
+		--card: 222.2 84% 4.9%;
+		--card-foreground: 210 40% 98%;
+
+		--popover: 222.2 84% 4.9%;
+		--popover-foreground: 210 40% 98%;
+
+		--primary: 210 40% 98%;
+		--primary-foreground: 222.2 47.4% 11.2%;
+
+		--secondary: 217.2 32.6% 17.5%;
+		--secondary-foreground: 210 40% 98%;
+
+		--muted: 217.2 32.6% 17.5%;
+		--muted-foreground: 215 20.2% 65.1%;
+
+		--accent: 217.2 32.6% 17.5%;
+		--accent-foreground: 210 40% 98%;
+
+		--destructive: 0 62.8% 30.6%;
+		--destructive-foreground: 210 40% 98%;
+
+		--border: 217.2 32.6% 17.5%;
+		--input: 217.2 32.6% 17.5%;
+		--ring: 212.7 26.8% 83.9%;
+	}
+}
+
+@layer base {
+	* {
+		@apply border-border;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+}
+
+/* Box Shadow */
+
+.box_shadow_sec {
+	box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.card_shadow_orange {
+	box-shadow: rgb(219 205 186 / 25%) 0px 50px 100px -20px, rgb(255 167 32 / 18%) 0px 30px 60px -30px, rgb(209 153 23) 0px -2px 6px 0px inset !important;
+}
+
+/* Input Field CSS Start  */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+}
+/* Input Field CSS End  */
+
+/* Auth Styles */
+
+.authForm {
+	width: 31rem;
+}
+
+/* TypoGraphy */
+
+h1 {
+	font-size: clamp(1.5rem, 5vw, 2.5rem) !important;
+	font-weight: bold !important;
+	line-height: 1 !important;
+	letter-spacing: -1px;
+}
+h2 {
+	font-size: clamp(1.5rem, 2vw, 1.85rem) !important;
+	font-weight: bold !important;
+	line-height: 1.06 !important;
+	letter-spacing: -0.8px;
+}
+p {
+	font-size: clamp(0.8rem, 2vw, 1rem);
+}
+
+/* reCharts */
+.recharts-text {
+	stroke: #fff;
+}
+
+.tableRow:nth-child(odd) {
+	background-color: #ffe2c6;
+}
+
+/* ScrollBar Start */
+
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+::-webkit-scrollbar-track {
+	background: white;
+}
+::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* ScrollBar End */

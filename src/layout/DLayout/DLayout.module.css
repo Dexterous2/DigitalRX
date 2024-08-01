@@ -1,0 +1,18 @@
+.sidebar {
+	background: var(--primary-color);
+}
+
+.deshboard_wrap {
+	background: url(/image/main/bg.png);
+	background-size: auto;
+}
+
+.deshboard_wrap::-webkit-scrollbar {
+	width: 0.3rem !important;
+	background: #fff;
+}
+
+.deshboard_wrap::-webkit-scrollbar-thumb {
+	width: 0.4rem !important;
+	background: var(--primary-color);
+}
